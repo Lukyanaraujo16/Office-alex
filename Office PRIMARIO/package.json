@@ -1,0 +1,21 @@
+{
+  "name": "office",
+  "version": "3.4.4",
+  "main": "index.js",
+  "repository": "",
+  "author": "",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "commit": "cz"
+  },
+  "devDependencies": {
+    "cz-conventional-changelog": "3.3.0",
+    "validate-commit-msg": "^2.14.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}

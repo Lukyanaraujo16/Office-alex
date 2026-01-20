@@ -1,0 +1,49 @@
+{
+  "name": "Office BRTV",
+  "short_name": "Office BRTV",
+  "theme_color": "#ff2028",
+  "background_color": "#343a40",
+  "display": "fullscreen",
+  "orientation": "portrait",
+  "scope": "https://office.brtv.me/",
+  "start_url": "https://office.brtv.me/",
+  "icons": [
+    {
+      "src": "dist/img/icons/manifest-icon-192.maskable.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "dist/img/icons/manifest-icon-192.maskable.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "dist/img/icons/manifest-icon-512.maskable.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "dist/img/icons/manifest-icon-512.maskable.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Novo teste",
+      "url": "/sys/api.php?action=create_test&package_id=3",
+      "description": "Criar um novo teste rapidamente!",
+      "icons": [
+        {
+          "src": "/dist/svg/user-clock-solid-c.png",
+          "sizes": "192x192"
+        }
+      ]
+    }
+  ]
+}

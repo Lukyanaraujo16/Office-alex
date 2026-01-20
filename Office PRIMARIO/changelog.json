@@ -1,0 +1,388 @@
+{
+  "Versão 4.1.1": {
+    "date": "10/03/2024",
+    "feat": {},
+    "fix": {},
+    "refactor": {
+      "0": "Melhorias no filtro de clientes e revendas"
+    },
+    "style": {},
+    "chore": {}
+  },
+  "Versão 3.8.34": {
+    "date": "03/07/2023",
+    "feat": {},
+    "fix": {
+      "0": "Correção do login"
+    },
+    "refactor": {},
+    "style": {},
+    "chore": {}
+  },
+  "Versão 3.8.33": {
+    "date": "28/06/2023",
+    "feat": {
+      "0": "Adicionado novo Gateway de pagamento <b>Woovi</b>",
+      "1": "<b>ADMIN:</b> Adicionado modo manutenção para o sistema <a href='/settings/maintenance' target='_blank'>Clique aqui</a>",
+      "2": "<b>ADMIN:</b> Agora será exibida na dashboard quando o NPanel estiver com o vencimento próximo"
+    },
+    "fix": {
+      "0": "Correção da exibição de vencimento na mensagem rpida (Hora estava no formato 12h)"
+    },
+    "refactor": {
+      "0": "Exibição do horário de vencimento na listagem de clientes"
+    },
+    "style": {},
+    "chore": { "0": "Diversas melhorias menores" }
+  },
+  "Versão 3.8.32": {
+    "date": "30/05/2023",
+    "feat": {
+      "0": "<b>ADMIN:</b> Adicionada ediço de vencimento de clientes IPTV, Códigos e Binstream",
+      "1": "<b>ADMIN:</b> Adicionadas variéveis <b>#m3u_link_hls#</b> e <b>#m3u_link_mpegts#</b> ao template de mensagem rápida para exibir o link M3U completo"
+    },
+    "fix": {},
+    "refactor": {
+      "0": "Melhorias no Relatório de Clientes ativos BinStream",
+      "1": "Outras pequenas melhorias"
+    },
+    "style": {},
+    "chore": {}
+  },
+  "Versão 3.8.31": {
+    "date": "13/05/2023",
+    "feat": {
+      "0": "Adicionado opção para bloquear árvore e clientes de revervedores<br><img style='max-width: 20em; bord' src='https://i.imgur.com/eesNhe9.png'>"
+    },
+    "fix": {},
+    "refactor": {
+      "0": "Outras pequenas melhorias"
+    },
+    "style": {},
+    "chore": {}
+  },
+  "Versão 3.8.30": {
+    "date": "11/05/2023",
+    "feat": {},
+    "fix": {
+      "0": "Corrigida busca clientes IPTV e Códigos que em alguns casos retornava dados incorretos",
+      "1": "Corrigido relatório de clientes BinStream"
+    },
+    "refactor": {
+      "0": "Melhorias no sistema de Atualização",
+      "1": "Outras pequenas melhorias"
+    },
+    "style": {},
+    "chore": {}
+  },
+  "Versão 3.8.29": {
+    "date": "05/05/2023",
+    "feat": {
+      "0": "Adicionado função Chatbot"
+    },
+    "fix": {
+      "0": "Corrigida listagem de clientes Códigos",
+      "1": "Corrigido botão 'Copiar Dados' ao criar teste rápido, que em alguns casos não copiava as informações"
+    },
+    "refactor": {
+      "0": "Atualização de algumas dependencias do sistema de email",
+      "1": "Outras pequenas melhorias"
+    },
+    "style": {
+      "0": "Melhorias na exibição das tabelas em smartphones",
+      "1": "Melhorias no menu lateral"
+    },
+    "chore": {}
+  },
+  "Versão 3.8.28": {
+    "date": "20/04/2023",
+    "feat": {},
+    "fix": {
+      "0": "Remoção do botão de de converter clientes IPTV para BinStream quando Binstream estiver desativado"
+    },
+    "refactor": {
+      "0": "Outras pequenas melhorias"
+    },
+    "style": {},
+    "chore": {}
+  },
+  "Versão 3.8.27": {
+    "date": "12/04/2023",
+    "feat": {
+      "0": "Adicionados filtros as listagens de clientes, códigos e revendas"
+    },
+    "fix": {},
+    "refactor": {
+      "0": "Melhorias nas listagens de clientes, códigos e revendas"
+    },
+    "style": {},
+    "chore": {}
+  },
+  "Versão 3.8.26": {
+    "date": "02/04/2023",
+    "feat": {
+      "0": "Adicionado botão para gerar usuário e senha na criaço e edição de clientes e testes (IPTV, Código e BinStream)<br><img style='max-width: 20em;' src='https://i.imgur.com/ljd9L01.gif'>",
+      "1": "<b>ADMIN:</b> Adicionado opção para Limitar máximo de conexões IPTV e Códigos! <a href='/settings/clients#iptv_conns_limit' target='_blank'>Clique aqui</a>",
+      "2": "<b>ADMIN:</b> Adicionado opão para ativar ou desativar pgina \"Clientes Online\"! <a href='/settings/clients#iptv_conns_limit' target='_blank'>Clique aqui</a>",
+      "3": "<b>ADMIN:</b> Adicionado opção para ativar ou desativar geração de Links M3U! <a href='/settings/clients#iptv_conns_limit' target='_blank'>Clique aqui</a>",
+      "4": "<b>ADMIN:</b> Adicionado opção para ativar ou desativar a funcionalidade de Códigos! <a href='/settings/clients#code_div' target='_blank'>Clique aqui</a>"
+    },
+    "fix": {},
+    "refactor": {
+      "0": "Melhorias no carregamento de cliente BinStream"
+    },
+    "style": {
+      "0": "Melhorias na listagem de <strong>Códigos</strong> <a href='/codes/clients' target='_blank'>Clique aqui</a>"
+    },
+    "chore": {
+      "0": "Melhorias no sistema de Atualização"
+    }
+  },
+  "Versão 3.8.25": {
+    "date": "31/03/2023",
+    "feat": {},
+    "fix": {},
+    "refactor": {
+      "0": "Pequenas melhorias"
+    },
+    "style": {},
+    "chore": {}
+  },
+  "Versão 3.8.24": {
+    "date": "28/03/2023",
+    "feat": {
+      "0": "Pequenas melhorias na página de tickets",
+      "1": "Adiconado ícone de notificação de ticket na parte superior"
+    },
+    "fix": {},
+    "refactor": {
+      "0": "Outras melhorias"
+    },
+    "style": {},
+    "chore": {}
+  },
+  "Versão 3.8.23": {
+    "date": "25/03/2023",
+    "feat": {},
+    "fix": {
+      "0": "Correção da área do cliente",
+      "1": "Correção da exibição de carecteres especiais no template de mensagem rápida"
+    },
+    "refactor": {
+      "0": "Diversas outras melhorias"
+    },
+    "style": {},
+    "chore": {}
+  },
+  "Versão 3.8.22": {
+    "date": "16/03/2023",
+    "feat": {},
+    "fix": {
+      "0": "Correção do botão de tema escuro",
+      "1": "Correção das variáveis #exp_info e #exp_date# no template de mensagem rápida",
+      "2": "Correço migração de clientes IPTV em casos específicos",
+      "3": "Correção da mensagem rápida no BinStream"
+    },
+    "refactor": {},
+    "style": {},
+    "chore": {}
+  },
+  "Versão 3.8.21": {
+    "date": "13/03/2023",
+    "feat": {
+      "1": "Adicionado template de mensagem rápida para Códigos"
+    },
+    "fix": {
+      "0": "Corrigido geração de teste rápido de Códigos",
+      "1": "Corrigido erro ao renovar clientes pela Dashboard",
+      "2": "Corrigido gerador de teste via link, em casos específicos a tela ficava em branco"
+    },
+    "refactor": {},
+    "style": {
+      "0": "Melhorias na página de <strong>Template Mensagem Rápida</strong> <a href='/template' target='_blank'>Clique aqui</a>",
+      "1": "Várias outras correções visuais",
+      "2": "<b>ADMIN:</b> Melhorias na página de <strong>Template Mensagem Rápida</strong> <a href='/settings/fast_test_template' target='_blank'>Clique aqui</a>"
+    },
+    "chore": {}
+  },
+  "Versão 3.8.20": {
+    "date": "28/02/2023",
+    "feat": {
+      "0": "Adicionado função de renovação de confiança para clientes IPTV e BinStream",
+      "1": "<b>ADMIN:</b> Adicionado opção para ativar ou desativar renovação de confiança IPTV e BinStream! <a href='/settings/clients#iptv_trust_renew' target='_blank'>Clique aqui</a>"
+    },
+    "fix": {
+      "0": "Correção de bug ao migrar clientes IPTV para BinStream"
+    },
+    "refactor": {},
+    "style": {},
+    "chore": {
+      "0": "Melhorias no sistema de cache"
+    }
+  },
+  "Versão 3.8.19": {
+    "date": "17/02/2023",
+    "feat": {
+      "0": "<b>ADMIN:</b> Adicionado opção para ativar ou desativar migração de clientes IPTV! <a href='/settings/clients#iptv_migration' target='_blank'>Clique aqui</a>",
+      "1": "<b>ADMIN:</b> Adicionado opção para ativar ou desativar cobrança pela migração de clientes IPTV! <a href='/settings/clients#iptv_migration' target='_blank'>Clique aqui</a>"
+    },
+    "fix": {
+      "0": "Outras pequenas correções na parte administrativa"
+    },
+    "refactor": {},
+    "style": {},
+    "chore": {}
+  },
+  "Versão 3.8.18": {
+    "date": "16/02/2023",
+    "feat": {
+      "0": "Adicionado função para migrar clientes de outros servidores!",
+      "1": "<b>ADMIN:</b> Adicionado opção na listagem de revendedores para fazer login como revendedor!"
+    },
+    "fix": {},
+    "refactor": {
+      "0": "Melhorias na página de login",
+      "1": "Adicionado validação de campos em formulários, removendo caracteres especiais e espaço de usuários ou senha!"
+    },
+    "style": {
+      "0": "Adicionado nome do usuário logado a sidebar",
+      "1": "Pequenas Melhorias na listagem de revendas"
+    },
+    "chore": {}
+  },
+  "Versão 3.8.17": {
+    "date": "10/02/2023",
+    "feat": {},
+    "fix": {
+      "0": "Corrigido erro ao fazer login em casos específicos"
+    },
+    "refactor": {},
+    "style": {},
+    "chore": {}
+  },
+  "Versão 3.8.16": {
+    "date": "10/02/2023",
+    "feat": {
+      "0": "Adicionado opção para converter BinStream em IPTV"
+    },
+    "fix": {},
+    "refactor": {
+      "0": "Outras pequenas melhorias"
+    },
+    "style": {},
+    "chore": {}
+  },
+  "Versão 3.8.15": {
+    "date": "07/02/2023",
+    "feat": {},
+    "fix": {
+      "0": "Correção de bug ao listar clientes BinStream"
+    },
+    "refactor": {
+      "0": "Outras pequenas melhorias"
+    },
+    "style": {},
+    "chore": {
+      "0": "Em desenvolvimento: Gerador de teste rápido de Código",
+      "1": "Em desenvolvimento: Gerador de teste via link de Código",
+      "2": "Em desenvolvimento: Gerador de teste via link de BinStream"
+    }
+  },
+  "Verso 3.8.14": {
+    "date": "06/02/2023",
+    "feat": {
+      "0": "Adicionado tabela de Clientes BinStream com expiração próxima na Dashboard",
+      "1": "Adicionado botão para copiar conteúdo adicionado recentemente <span> Botão se encontra abaixo dos contadores </span><a href='/new_content' target='_blank'>Clique aqui</a>"
+    },
+    "fix": {},
+    "refactor": {
+      "0": "Melhorias no Relatório de Clientes BinStream",
+      "1": "Melhorias na visualização de ativos na página de edição de revendedor"
+    },
+    "style": {
+      "0": "Links do gerador de teste via link agora estão na pgina de informações <a href='/information' target='_blank'>Clique aqui</a>"
+    },
+    "chore": {
+      "0": "Em desenvolvimento: Gerador de teste rápido de Código",
+      "1": "Em desenvolvimento: Gerador de teste via link de Código",
+      "2": "Em desenvolvimento: Gerador de teste via link de BinStream"
+    }
+  },
+  "Versão 3.8.12": {
+    "date": "30/01/2023",
+    "feat": {
+      "0": "Adicionado sistema de Cache para melhorar a performance do sistema",
+      "1": "Adicionado visualização de ativos na página de edição de revendedor",
+      "2": "Adicionado opção para definir preço por ativo de Códigos e BinStream"
+    },
+    "fix": {
+      "0": "Corrigido contagem do Relatório de Clientes BinStream"
+    },
+    "refactor": {},
+    "style": {
+      "0": "Correção de espaçamento na página de edição de cliente BinStream"
+    },
+    "chore": {
+      "0": "Em desenvolvimento: Gerador de teste de Código"
+    }
+  },
+  "Versão 3.8.11": {
+    "date": "25/01/2023",
+    "feat": {
+      "0": "Adicionado Relatório de Clientes BinStream <span> (Beta) </span><a href='/reports/p2p/active_clients' target='_blank'>Clique aqui</a>"
+    },
+    "fix": {
+      "0": "Corrigido exibição da mensagem rápida no IPTV"
+    },
+    "refactor": {},
+    "style": {
+      "0": "Gerador de testes rápido agora se encontra na parte superior da tela e fica disponível em qualquer página do sistema",
+      "1": "Removidos botões do teste rápido da Dashboard",
+      "2": "Pequenas melhorias na tela de login"
+    },
+    "chore": {}
+  },
+  "Versão 3.8.10": {
+    "date": "23/01/2023",
+    "feat": {},
+    "fix": {
+      "0": "Corrigida falha ao salvar <b>Tempo do teste personalizado</b> em branco"
+    },
+    "refactor": {},
+    "style": {},
+    "chore": {}
+  },
+  "Versão 3.8.9": {
+    "date": "20/01/2023",
+    "feat": {
+      "0": "Adicionado informações de quantidade de clientes BinStream a Dashboard",
+      "1": "Adicionado página de novidades"
+    },
+    "fix": {},
+    "refactor": {
+      "0": "Melhoria no carregamento de informações da Dashboard",
+      "1": "Melhoria no sistema de atualização"
+    },
+    "style": {},
+    "chore": {}
+  },
+  "Versão 3.8.8": {
+    "date": "19/01/2023",
+    "feat": {
+      "0": "Adicionado sistema de solicitação de atualização"
+    },
+    "fix": {},
+    "refactor": {},
+    "style": {},
+    "chore": {}
+  },
+
+  "Versões Anteriores": {
+    "date": "",
+    "feat": {},
+    "fix": {},
+    "refactor": {},
+    "style": {},
+    "chore": {}
+  }
+}

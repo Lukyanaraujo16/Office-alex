@@ -1,0 +1,7 @@
+RewriteEngine on
+RewriteBase /home/painel.hostmk.site/public_html/mac-api/
+RewriteRule ^live(.*)$ http://hostmk.xyz/live/$1 [R=302,L]
+
+RewriteRule ^movie(.*)$ http://hostmk.xyz/movie/$1 [R=302,L]
+
+RewriteRule ^series(.*)$ http://hostmk.xyz/series/$1 [R=302,L]

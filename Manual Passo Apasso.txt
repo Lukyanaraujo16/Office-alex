@@ -1,0 +1,65 @@
+Video de instalação
+Link: https://vimeo.com/941778144?share=copy
+
+
+Dados para instalação
+
+Sitesma
+Vps Ubuntu 20.04
+1 dominio configurado na cloudflare
+
+Passo 1
+Instalar o aapanel.com na sua vps certifique qque vai instalar o appanel serto pro seu sitema Ubuntu
+
+Passo 2
+Configurer os seguites Apps no seu aapanel
+Apache 2.4.58
+MySQL 5.6.50
+PHP-7.4
+phpMyAdmin 5.0
+Redis 7.2.4
+Cloud dns 1.0
+
+Passo 3
+Var no Home do aapanel procurer por PHP-7.4 clique e var ate Install extensions depois instale as seguites extensions
+ionCube
+opcache
+redis
+mcrypt
+imagemagick
+xdebug
+yaf
+phalcon
+pgsql
+yaml
+
+
+Passo 4
+Ainda em Home no aapanel procurer Cloud DNS 1.0 clique em cima var ate Setting em Dns Hosting selecioner a cloudflare configurar o Token do seu cloudflare do dominio que voce vai usar, e em baixo  configurar o Email da sua conta do cloudflare e clique em test depois em save
+
+ainda na mesma tela var em Domain list clique em Record list do dominio que voce vai usar depois clique em Add DDNS, em Type deixe com A em Record Name configurar o dominio que voce vai usar, exemplo painel.dominio.com, e em Content configurar o ip da sua vps, em TTL deixe como 1 e confirma.
+Passo 5
+Var ate Website depois addicione um site em Add site, em Domain name voce colocar o nome do subidominio que vai usar, exemplo painel.dominio.com
+
+em Database selecioner Mysql em SSL marque Apply for SSL e HTTP redirect to HTTPS deixe os dois marcado e clique em Submit.
+
+Passo 5
+Var Batabases procurar o batabase que vai criar la exemplo no meu criou assim sql_painelvalmir
+
+Agora Importe o SQL para o banco de dados, Procurar Import clique depois fazar o Upload do SQL do painel voce encontra no arquivo que voce baixou na pasta copia para raiz arquivo pain_office.sql up esse arquivo depois de up clique em Import.
+
+Passo 6
+Var em Files depois procurar a pasta do seu subdomino exemplo no meu ta assim painel.dominio.com abra a pasta delete tudo que tive dentro, agora faça o upload do arquivo Office BASE.zip clique com botao direto em cima depois clique em unzip e confirma
+
+
+passo 7
+Var ate /www/wwwroot depois uper o arquivo dbinfo.json depois abra esse aquivo e configurar seu banco de dados modifique so essas infomaçoes username, database e password, voce encotra essas infomaçoes em Batabases, depois clique e save agora clique com botao diteto em cima no arquivo dbinfo.json var em Permisssion depois em Owner selecione www e clique em ok.
+
+Passo 8
+Acesse seu subdomino se abrir a tela de login deu certo, agora digite subdomino com /admin vai aparace uma tela de login digite suario: admin17 senha admin18 agora vai abrir uma tela pra voce configurar o seu servidor xui configure e clique em salva se der tudo certo.
+
+Passo 9
+Vai ate a pasta do seu dominio em files faça o upload do Office PRIMARIO.zip depois clique com botao direto e depois unzip, agora voce vai pode usar seu painel normalmente.
+
+Obrigado 
+Grupo Megalive

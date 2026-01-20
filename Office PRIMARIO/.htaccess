@@ -1,0 +1,112 @@
+RewriteEngine On
+RewriteCond %{HTTPS}  !=on
+RewriteRule ^/?(.*) https://%{SERVER_NAME}/$1 [R,L]
+
+ErrorDocument 404 /e404.php 
+#Disable index view
+options -Indexes
+
+# protect .env
+<Files .env>
+    Order allow,deny
+    Deny from all
+</Files>
+
+# protect .htaccess
+<Files ~ "^.*\.([Hh][Tt][Aa])">
+	Order allow,deny
+	Deny from all
+	Satisfy all
+</Files>
+
+RewriteEngine On
+RewriteRule gateway/mercadopago/([0-9]+)$ ./sys/clientApi.php?seller_id=$1&action=cb_gateway_mercadopago&%{QUERY_STRING}
+RewriteRule gateway/woovi$ ./sys/clientApi.php?action=cb_gateway_woovi
+
+# RewriteEngine On
+# RewriteCond %{REQUEST_FILENAME} !-f
+# RewriteCond %{REQUEST_FILENAME} !-d
+# RewriteRule ^api/([a-z]+)/([0-9]+)/?$ ./sys/api_new.php?route=$1&id=$2 [QSA,NC,L]
+
+#Informações
+RewriteRule ^dashboard$ dashboard.php [QSA,L,NC]
+RewriteRule ^information$ information.php [QSA,L,NC]
+RewriteRule ^new_content$ new_content.php [QSA,L,NC]
+
+#Clientes IPTV
+RewriteRule ^iptv/new$ iptv_client_create.php [QSA,L,NC]
+RewriteRule ^iptv/migrate$ iptv_migrate_client.php [QSA,L,NC]
+RewriteRule ^iptv/newtest$ iptv_create_test.php [QSA,L,NC]
+RewriteRule ^iptv/online$ iptv_online.php [QSA,L,NC]
+RewriteRule ^iptv/clients$ iptv_list.php [QSA,L,NC]
+RewriteRule ^iptv/clients/show/([^/]*)$ iptv_list.php?client_id=$1 [L]
+RewriteRule ^iptv/edit/([^/]*)$ iptv_client_edit.php?client_id=$1 [L]
+
+#Códigos IPTV
+RewriteRule ^codes/new$ codes_create.php [QSA,L,NC]
+RewriteRule ^codes/new/multi$ codes_create_multi.php [QSA,L,NC]
+RewriteRule ^codes/online$ codes_online.php [QSA,L,NC]
+RewriteRule ^codes/clients$ codes_list.php [QSA,L,NC]
+RewriteRule ^codes/clients/show/([^/]*)$ codes_list.php?client_id=$1 [L]
+RewriteRule ^codes/edit/([^/]*)$ codes_edit.php?client_id=$1 [L]
+
+#Clientes P2P
+RewriteRule ^p2p/new$ bin_create_client.php [QSA,L,NC]
+RewriteRule ^p2p/newtest$ bin_create_test.php [QSA,L,NC]
+RewriteRule ^p2p/clients$ bin_list_clients.php [QSA,L,NC]
+RewriteRule ^p2p/clients/show/([^/]*)$ bin_list_clients.php?client_id=$1 [L]
+RewriteRule ^p2p/edit/([^/]*)$ bin_edit_client.php?client_id=$1 [L]
+
+#Revendedores
+RewriteRule ^reseller/new$ reseller_create.php [QSA,L,NC]
+RewriteRule ^resellers$ reseller_list.php [QSA,L,NC]
+RewriteRule ^reseller/edit/([^/]*)$ reseller_edit.php?reseller_id=$1 [L]
+
+#Ferramentas
+RewriteRule ^shortener$ shortener.php [QSA,L,NC]
+RewriteRule ^tools$ tools.php [QSA,L,NC]
+
+#Tickets
+RewriteRule ^ticket/new$ ticket_create.php [QSA,L,NC]
+RewriteRule ^tickets$ ticket_list.php [QSA,L,NC]
+RewriteRule ^ticket/view/([^/]*)$ ticket.php?ticket_id=$1 [L]
+
+#Configurações
+RewriteRule ^plans$ plans.php [QSA,L,NC]
+RewriteRule ^gateways$ gateways.php [QSA,L,NC]
+
+#Relatórios
+RewriteRule ^reports/transactions$ transactions.php [QSA,L,NC]
+RewriteRule ^reports/active_clients$ active_clients_report.php [QSA,L,NC]
+RewriteRule ^reports/p2p/active_clients$ bin_active_clients_report.php [QSA,L,NC]
+RewriteRule ^reports/reseller$ log_reseller.php [QSA,L,NC]
+RewriteRule ^reports/credits$ log_credits.php [QSA,L,NC]
+
+#Email
+RewriteRule ^email/settings$ mail_settings.php [QSA,L,NC]
+RewriteRule ^email/templates$ mail_templates.php [QSA,L,NC]
+
+#Template teste rapido
+RewriteRule ^template$ template.php [QSA,L,NC]
+
+#Perfil
+RewriteRule ^profile$ profile.php [QSA,L,NC]
+
+#Logout
+RewriteRule ^logout$ logout.php [QSA,L,NC]
+
+#Update
+RewriteRule ^update$ update.php [QSA,L,NC]
+
+#Administração
+RewriteRule ^settings/([^/]*)$ settings_new.php?page=$1 [L]
+
+#Link de teste
+RewriteRule ^test/([^/]*)$ test.php?key=$1 [L]
+
+#Chatbot
+RewriteRule ^chatbot/config$ chatbot_config.php [QSA,L,NC]
+RewriteRule ^chatbot/new$ chatbot_create.php [QSA,L,NC]
+RewriteRule ^chatbot/list$ chatbot_list.php [QSA,L,NC]
+RewriteRule ^chatbot/edit/([^/]*)$ chatbot_edit.php?rule_id=$1 [L]
+RewriteRule ^chatbot/([^/]*)$ sys/chatbot.php?key=$1 [L]
